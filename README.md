@@ -1,6 +1,7 @@
 Geçersiz dosyayı silmek için:
 
 sudo rm /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
+
 sudo apt-get update
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
