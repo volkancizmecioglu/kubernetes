@@ -19,7 +19,7 @@ Sonra ip adresimizi tanımlıyoruz:
 network:
   version: 2
   ethernets:
-    enp0sx: #IP adresini kontrol ettiğinizdeki şekilde yazın
+    enp0sx: #Ip adresini kontrol ederkenki gördüğünüz şekilde enpos'u yazın
       dhcp4: no
       addresses:
         - xxx.xx.xx.x/xx #Statik hale getirmek istediğiniz IP adresini yazın
