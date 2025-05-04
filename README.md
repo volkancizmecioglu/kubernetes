@@ -26,6 +26,10 @@ network:
       gateway4: xxx.xx.xx.x #IP adresinizin gateway'ini tanımlayın
       nameservers:
         addresses: [8.8.8.8, 8.8.4.4]
+
+Ardından netplan'ı uyguluyoruz:
+
+sudo netplan apply
         
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Kubernetes Bileşenlerinin Kurulumu:
