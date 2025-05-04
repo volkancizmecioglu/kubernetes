@@ -12,7 +12,7 @@ ip a
 (enpos'un nasıl yazıldığını not alın)
 
 Netplan'ı açıyoruz:
-cat /etc/netplan/01-netcfg.yaml
+sudo nano /etc/netplan/01-netcfg.yaml
 
 Sonra ip adresimizi tanımlıyoruz:
 
