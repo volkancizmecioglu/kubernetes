@@ -53,3 +53,8 @@ kubectl version --client
 kubeadm version
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sanal makineyi yeniden başlattıktan sonra kubelet.service'i de yeniden başlatmalısın:
+
+sudo swapoff -a
+
+sudo systemctl restart kubelet.service
