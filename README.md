@@ -5,6 +5,28 @@ sudo rm /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
 sudo apt-get update
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IP adresini statik hale getirmek için:
+
+Önce ip adresini öğreniyoruz:
+ip a
+(enpos'un nasıl yazıldığını not alın)
+
+Netplan'ı açıyoruz:
+cat /etc/netplan/01-netcfg.yaml
+
+Sonra ip adresimizi tanımlıyoruz:
+
+network:
+  version: 2
+  ethernets:
+    enp0sx: #IP adresini kontrol ettiğinizdeki şekilde yazın
+      dhcp4: no
+      addresses:
+        - xxx.xx.xx.x/xx #Statik hale getirmek istediğiniz IP adresini yazın
+      gateway4: xxx.xx.xx.x #IP adresinizin gateway'ini tanımlayın
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Kubernetes Bileşenlerinin Kurulumu:
 
 sudo apt update
