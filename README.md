@@ -6,6 +6,7 @@ sudo rm /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
 sudo apt-get update
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 IP adresini statik hale getirmek için:
 
 Önce ip adresini öğreniyoruz:
@@ -33,6 +34,7 @@ Ardından netplan'ı uyguluyoruz:
 sudo netplan apply
         
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Kubernetes Bileşenlerinin Kurulumu:
 
 sudo apt update
@@ -54,6 +56,7 @@ kubectl version --client
 kubeadm version
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Sanal makineyi yeniden başlattıktan sonra kubelet.service'i de yeniden başlatmalısın:
 
 sudo swapoff -a
@@ -61,6 +64,7 @@ sudo swapoff -a
 sudo systemctl restart kubelet.service
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Sanal makine yeniden başlayınca oluşturduğumuz admin-user silinebiliyor. Bu durumda:
 
 (ServiceAccount oluştur)
