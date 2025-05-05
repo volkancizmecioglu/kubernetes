@@ -62,11 +62,11 @@ sudo systemctl restart kubelet.service
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sanal makine yeniden başlayınca oluşturduğumuz admin-user silinebiliyor. Bu durumda:
 
-# ServiceAccount oluştur
+(ServiceAccount oluştur)
 kubectl create -n kube-system serviceaccount admin-user
 
-# ClusterRoleBinding oluştur
+(ClusterRoleBinding oluştur)
 kubectl create clusterrolebinding admin-user-binding --clusterrole=cluster-admin --serviceaccount=kube-system:admin-user
 
-# Yeni token al
+(Yeni token al)
 kubectl -n kubernetes-dashboard create token admin-user
