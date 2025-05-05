@@ -75,4 +75,6 @@ kubectl create clusterrolebinding admin-user-binding --clusterrole=cluster-admin
 
 (Yeni token al)
 kubectl -n kubernetes-dashboard create token admin-user
+  
+NOT:Sadece token expire olmuş olabilir. Eğer admin-user already exists uyarısı alırsan yeni token al.
 </pre>
