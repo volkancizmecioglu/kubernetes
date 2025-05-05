@@ -1,3 +1,4 @@
+<pre>
 Geçersiz dosyayı silmek için:
 
 sudo rm /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
@@ -70,3 +71,4 @@ kubectl create clusterrolebinding admin-user-binding --clusterrole=cluster-admin
 
 (Yeni token al)
 kubectl -n kubernetes-dashboard create token admin-user
+</pre>
